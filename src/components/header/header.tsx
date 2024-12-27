@@ -6,9 +6,9 @@ export const Header: FC = () => {
     <Wrapper>
         <Container>
             <img src="logo.png" alt="" />
-            <Link>
-                <img src="" alt="" />
-                <p>Контактные данные: +7 (916) 838 81 34</p>
+            <Link href="">
+                <img src="/icons/phone.svg" alt="" />
+                +7 (916) 838 81 34
             </Link>
         </Container>
         <Container>
@@ -19,6 +19,6 @@ export const Header: FC = () => {
                 <p>Помочь фонду</p>
             </Link>
         </Container>
-    </Wrapper>
+    </Wrapper> 
   )
 }

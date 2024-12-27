@@ -1,10 +1,30 @@
-// import { Header } from './components/header/header'
+import { AboutUs } from './components/about-us/about-us'
+import { Footer } from './components/footer/footer'
+import { GlobalContainer } from './components/global-container/global-container'
+import { Header } from './components/header/header'
+import { HeroSection } from './components/hero/hero'
+import { QASection } from './components/qa-section/qa-section'
 
 function App() {
   return (
     <>
-      {/* <Header /> */}
-      <img src="/Frame 5.png" alt="" style={{ width: '100%' }} />
+      <GlobalContainer wrapperStyles={{
+        position: 'sticky',
+        top: 0,
+        background: 'white',
+        boxShadow: '1px 0 10px gray'
+      }}>
+        <Header />
+      </GlobalContainer>
+      
+      <HeroSection />
+
+      <GlobalContainer>
+        <AboutUs />
+        <QASection />
+      </GlobalContainer>
+
+      <Footer />
     </>
   )
 }
