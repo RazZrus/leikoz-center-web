@@ -1,4 +1,3 @@
-import styled from "styled-components"
 import { Heading } from "../about-us/about-us.styles"
 import { FC } from "react"
 import { Accordion, Details, Summary, TextLink } from "./qa-section.styles"
