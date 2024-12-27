@@ -12,7 +12,8 @@ function App() {
         position: 'sticky',
         top: 0,
         background: 'white',
-        boxShadow: '1px 0 10px gray'
+        boxShadow: '1px 0 10px gray',
+        zIndex: 1,
       }}>
         <Header />
       </GlobalContainer>

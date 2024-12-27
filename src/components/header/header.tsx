@@ -5,18 +5,20 @@ export const Header: FC = () => {
   return (
     <Wrapper>
         <Container>
-            <img src="logo.png" alt="" />
+            <a href="https://leikozu.net" className="logoLink">
+                <img src="logo.png" alt="" />
+            </a>
             <Link href="">
                 <img src="/icons/phone.svg" alt="" />
                 +7 (916) 838 81 34
             </Link>
         </Container>
         <Container>
-            <Link>
-                <p>Стать донором</p>
+            <Link href='https://www.gosuslugi.ru/606630/1/form'>
+                Стать донором
             </Link>
-            <Link>
-                <p>Помочь фонду</p>
+            <Link href='https://leikozu.net/help-fund/'>
+                Помочь фонду
             </Link>
         </Container>
     </Wrapper> 
