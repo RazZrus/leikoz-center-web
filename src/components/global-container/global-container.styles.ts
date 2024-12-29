@@ -12,6 +12,6 @@ export const Wrapper = styled('div')(() => ({
 export const Container = styled("div")(() => ({
     width: '100%',
     boxSizing: 'border-box',
-    padding: '0 40px',
+    padding: '0 20px',
     maxWidth: '1400px',
 }))

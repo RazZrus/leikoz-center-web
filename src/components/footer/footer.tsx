@@ -11,11 +11,11 @@ export const Footer: FC = () => {
                     <LogoWrapper>
                         <img src="/icons/logo_without_text.svg" alt="" style={{ gridArea: 'logo' }}/>
                         <LogoText>ФОНД БОРЬБЫ С ЛЕЙКЕМИЕЙ</LogoText>
-                        <LogoMail>info@leikozu.net</LogoMail>
+                        <LogoMail href="mailto:info@leikozu.net">info@leikozu.net</LogoMail>
                     </LogoWrapper>
                     <Contacts>
                         <img src="/icons/white_phone.svg" alt="" />
-                        <a>Контактные данные: +7 (916) 838 81 34</a>
+                        <a href="tel:79168388134">Контактные данные: +7 (916) 838 81 34</a>
                     </Contacts>
                 </LeftBlock>
                 <RightBlock>

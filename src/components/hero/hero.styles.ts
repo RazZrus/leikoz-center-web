@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Wrapper = styled('div')(() => ({
     maxWidth: '1440px',
-    padding: '0 40px',
+    padding: '0 20px',
     display: 'flex',
     height: '100%',
     width: '100%',
@@ -13,19 +13,24 @@ export const Wrapper = styled('div')(() => ({
 
 export const ButtonGroup = styled('div')(() => ({
     display: 'flex',
-    gap: '60px',
+    gap: '20px',
     justifyContent: 'flex-start',
     alignItems: 'center',
-    marginTop: '25px',
+    marginTop: '10px',
+    
+    ['@media (min-width: 1200px)']: {
+        marginTop: '25px',
+        gap: '60px',
+    }
 }))
 
 export const Button = styled('a')(() => ({
     padding: '5px 15px',
     backgroundColor: 'white',
-    fontSize: '24px',
+    fontSize: '10px',
     fontFamily: 'Inter',
     fontWeight: '700',
-    lineHeight: '30px',
+    lineHeight: '11px',
     textDecoration: 'none',
     borderRadius: '50px',
     border: "none",
@@ -34,6 +39,15 @@ export const Button = styled('a')(() => ({
     cursor: 'pointer',
     "&:hover": {
         opacity: '0.8',
+    },
+
+    ['@media (min-width: 768px)']: {
+        fontSize: '14px',
+        lineHeight: '20px',
+    },
+    ['@media (min-width: 1200px)']: {
+        fontSize: '24px',
+        lineHeight: '30px',
     }
 }))
 
@@ -41,11 +55,27 @@ export const List = styled('ul')(() => ({
     listStyle: 'none',
     display: 'flex',
     flexDirection: 'column',
-    gap: '30px',
+    gap: '3px',
+
+    ['@media (min-width: 768px)']: {
+        gap: '10px',
+    },
+    ['@media (min-width: 1200px)']: {
+        gap: '30px',
+    },
     '& li': {
         width: 'fit-content',
-        fontSize: '24px',
-        lineHeight: '30px',
+        fontSize: '11px',
+        lineHeight: '14px',
+
+        ['@media (min-width: 768px)']: {
+            fontSize: '14px',
+            lineHeight: '16px',
+        },
+        ['@media (min-width: 1200px)']: {
+            fontSize: '24px',
+            lineHeight: '30px',
+        },
         '& a': {
             color: 'white',
             display: 'flex',
@@ -64,22 +94,40 @@ export const List = styled('ul')(() => ({
 }))
 
 export const Heading = styled('h1')(() => ({
-    fontSize: '40px',
-    lineHeight: '48px',
+    fontSize: '20px',
+    lineHeight: '25px',
     color: 'white',
     maxWidth: '800px',
+
+    ['@media (min-width: 768px)']: {
+        fontSize: '24px',
+        lineHeight: '30px',
+    },
+    ['@media (min-width: 1200px)']: {
+        fontSize: '40px',
+        lineHeight: '48px',
+    }
 }))
 
 export const Section = styled('section')(() => ({
     width: '100%',
-    height: '535px',
+    height: '200px',
     display: 'flex',
     justifyContent: "center",
     alignItems: 'center',
-    padding: '24px',
+    padding: '6px',
     boxSizing: 'border-box',
     background: 'url("/heroBackground.png")',
     backgroundOrigin: 'border-box',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+    
+    ['@media (min-width: 768px)']: {
+        height: '250px',
+        padding: '8px',
+    },
+    ['@media (min-width: 1200px)']: {
+        height: '535px',
+        padding: '24px',
+    }
 }))
