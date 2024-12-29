@@ -6,7 +6,7 @@ export const QASection: FC = () => {
   return (
     <>
         <Heading>Вопросы и ответы</Heading>
-        <Accordion>
+        <Accordion id="qa">
             <Details>
                 <Summary>
                     Что такое трансплантация костного мозга?
