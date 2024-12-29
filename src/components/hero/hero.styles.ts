@@ -88,6 +88,9 @@ export const List = styled('ul')(() => ({
                 width: '15px',
                 height: '16px',
                 display: 'block',
+            },
+            '&:hover': {
+                textDecoration: 'underline'
             }
         }
     }
